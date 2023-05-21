@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+</head>
+<body>
+    <h1>This is Dom Events</h1>
+
+    <!-- option 01 -->
+
+    <button onclick="document.body.style.backgroundColor ='yellow'">Make Yellow</button>
+    
+    
+    <!-- option 02 -->
+    <button onclick="redColor()">Make Red</button>
+
+    
+    <!-- option 03 -->
+    <button id="make-green">Make Green</button>
+    <button id="make-black">Make Black</button>
+
+    <!-- option 04 -->
+    <button id="make-blue">Make Blue</button>
+
+     <!-- option 04 same--> 
+
+    <button id="pink-color">Make Pink</button>
+
+    <!-- option 05 --> 
+
+     <button id="make-gold">Make Gold</button>
+    <script>
+      document.getElementById('make-gold').addEventListener('click', function(){
+        document.body.style.backgroundColor = 'gold';
+      })
+    </script>
+    
+    <script src="DomEventJS/events.js"></script>
+
+
+</body>
+</html>
